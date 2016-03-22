@@ -1,0 +1,71 @@
+#header {
+    background-color: white;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    background-color: #ff6504;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 100;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#subtitel {
+    display: none;
+}
+
+#menu {
+    position: absolute;
+}
+
+#main.show {
+    margin-left: 0px;
+    margin-right: -500px;
+}
+
+
+#inner {
+    position: relative;
+    width: 82vw;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+
+#hamburger {
+    display: inline-block;
+    margin-top: 3px;
+    font-size: 0.8em;
+    margin-left: 30px;
+    margin-right: 16px;
+}
+
+div#main div.block {
+}
+
+div#main {
+    width: calc(100% + 250px);
+    margin-left: -250px;
+    overflow: hidden;
+
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+div#main div.block h1 {
+
+}
+
+#puppet {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
