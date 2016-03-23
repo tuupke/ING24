@@ -103,3 +103,8 @@ div#main {
 img.half {
     width: 90%;
 }
+
+.bubble
+{
+    max-width: 88vw;
+}
