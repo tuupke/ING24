@@ -1,6 +1,7 @@
 #header {
     background-color: white;
     font-size: 2em;
+    line-height: 1.3em;
     padding: 0;
     margin: 0;
     background-color: #ff6504;
@@ -16,6 +17,11 @@
 body {
     padding: 0;
     margin: 0;
+}
+
+div#main div.block.half {
+    width: 100%;
+    padding: 30px;
 }
 
 #subtitel {
@@ -57,10 +63,9 @@ body {
 }
 
 #hamburger {
+    position: relative;
     display: inline-block;
-    margin-top: 3px;
-    font-size: 0.8em;
-    margin-left: 30px;
+    margin: 0;
     margin-right: 16px;
 }
 
@@ -78,4 +83,19 @@ div#main {
     position: fixed;
     right: 20px;
     bottom: 20px;
+}
+
+#name::before{
+    background-image: url('images/ing.png');
+    content: " ";
+    height: 30px;
+    width: 30px;
+}
+
+#logo {
+    display: inline-block;
+}
+
+img.half {
+    width: 90%;
 }

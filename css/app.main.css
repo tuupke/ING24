@@ -16,28 +16,23 @@ div#main {
     margin-right: auto;
 }
 
+div#main div.block.half {
+    width: 48%;
+    padding: 7px;
+}
+
 div#main div.block {
     width: 100%;
     float: left;
     padding: 30px;
 }
-
 div.full {
     position: relative;
     width: 100%;
 }
 
-div.half {
-    position: relative;
-    width: 50%;
-}
-
 .gone {
     display: none;
-}
-
-.show {
-
 }
 
 #menu {
@@ -52,8 +47,9 @@ div.half {
     padding: 15px;
 }
 
-#menu .item.selected {
+#menu .item.selected, #menu .item:hover {
     background-color: #ff6200;
+    cursor: hand;
     color: white;
 }
 
@@ -61,10 +57,6 @@ div.half {
     display:inline-block;
     float: left;
     position: relative;
-}
-
-#header {
-
 }
 
 #inner {
@@ -85,7 +77,7 @@ div.half {
 }
 
 #header {
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
 
@@ -116,4 +108,13 @@ h2 {
     margin-right: 15px;
     color: white;
     font-weight: lighter;
+}
+
+#logo {
+    display: none;
+}
+
+img.half {
+    width: 47%;
+    margin: 5px;
 }

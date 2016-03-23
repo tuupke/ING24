@@ -11,10 +11,16 @@ hamb.onclick=function(e){
 
 };
 
-//document.body.onscroll = function(){
-//    if(!window.active){
-//        window.scrollTo(0,0);
-//    }
-//};
-
 hamb.style.marginLeft = "0px";
+
+var menuItems = document.querySelectorAll("#menu .item");
+
+for(var i in menuItems){
+    var item = menuItems[i];
+
+    if(typeof item === 'object' && item.getAttribute('name') !== undefined&& item.getAttribute('name') !== null){
+        item.addEventListener('click', function(){
+            window.location = this.getAttribute(('name'));
+        }, false);
+    }
+}
