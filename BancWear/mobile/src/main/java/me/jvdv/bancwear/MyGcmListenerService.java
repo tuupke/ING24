@@ -66,7 +66,6 @@ public class MyGcmListenerService extends GcmListenerService {
          */
         sendNotification(message);
 
-        MainActivity.mHandler.handleMessage(message);
         // [END_EXCLUDE]
     }
     // [END receive_message]
@@ -77,18 +76,26 @@ public class MyGcmListenerService extends GcmListenerService {
      * @param message GCM message received.
      */
     private void sendNotification(String message) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = null;
+
+        //Choose the activity to go to
+        if (message.substring(0,3).equals("You")) {
+            intent = new Intent(this, InfoActivity.class);
+        }
+        if (message.substring(0,4).equals("Have")) {
+            intent = new Intent(this, ForgottenActivity.class);
+        }
+
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);
 
 
-        //TODO : here we should make the intent such that the MainActivity can call some js using data from the message.
 
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_stat_ic_notification)
-                .setContentTitle("GCM Message")
+                .setContentTitle("SmartBalance Message")
                 .setContentText(message)
                 .setAutoCancel(true)
                 .setSound(defaultSoundUri)
