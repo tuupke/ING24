@@ -11,7 +11,7 @@
     }
 
     // update the UI  
-    $('#curl').text('curl "http://ortc-developers2-useast1-s0001.realtime.co/send" --data "AK=B2N59F&AT=SomeToken&C=' + channel + '&M=hello"');
+    $('#curl').text('curl "http://ortc-developers2-useast1-s0001.realtime.co/send" --data "AK=Y0IprI&AT=3afxcv4ymzzsfmovdon22kmh&C=' + channel + '&M=hello"');
     $('#channel').text(channel);
       
     // start Chrome Push Manager to obtain device id and register it with Realtime
