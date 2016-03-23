@@ -63,8 +63,8 @@ if (isset($_GET['message'])){
         </div>
         <div class="block">
             <h1>Pay</h1>
-            <p><a href="?message=You spend &euro;20,- on groceries">Classified</a></p>
-            <p><a href="?message=A payment of &euro;20,- could not be classified.">Unclassified</a></p>
+            <p><a href="?message=You spent &euro;20 on groceries">Classified</a></p>
+            <p><a href="?message=Your payment of &euro; 20 could not be classified.">Unclassified</a></p>
         </div>
         </div>
     </div>
