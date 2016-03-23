@@ -6,6 +6,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, h7, #header {
     color: #ffa454;
+    margin-bottom: 0.2em;
     border-bottom: 2px solid #DDDDDD;
     vertical-align: bottom;
     font-weight: normal;
@@ -19,17 +20,19 @@ div#main {
 
 div#main div.block.half {
     width: 48%;
+    margin: 0;
     padding: 7px;
 }
 
 div#main div.block {
-    width: 100%;
+    width: 97%;
     float: left;
-    padding: 30px;
+    padding: 7px;
 }
+
 div.full {
     position: relative;
-    width: 100%;
+    width: 97%;
 }
 
 .gone {
@@ -41,6 +44,8 @@ div.full {
 }
 
 #menu .item {
+    position: relative;
+    overflow: hidden;
     width: 170px;
     height: 100px;
     background-color: #f3f2f0;
@@ -49,9 +54,17 @@ div.full {
 }
 
 #menu .item.selected, #menu .item:hover {
+
     background-color: #ff6200;
     cursor: hand;
     color: white;
+}
+
+#menu .item .fa {
+    position: absolute;
+    right: -8px;
+    bottom: -20px;
+    font-size: 120px;
 }
 
 #menu, #inner {
@@ -121,12 +134,14 @@ img.half {
 }
 
 .bubble.show {
-    
+    opacity: 1;
 }
 
 .bubble
 {
+    transition: all 0.3s ease 0s;
     position: fixed;
+    opacity: 0;
     bottom: 8em;
     right: 1em;
     max-width: 60vw;

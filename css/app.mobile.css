@@ -14,18 +14,24 @@
     z-index: 100;
 }
 
-#header::before{
-
-}
-
 body {
     padding: 0;
     margin: 0;
 }
 
+div#main div.block {
+    padding: 0;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
 div#main div.block.half {
     width: 100%;
-    padding: 30px;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #subtitel {
@@ -46,6 +52,7 @@ div#main div.block.half {
     color: white;
     margin: 0;
     height: 45px;
+    line-height: 45px;
 }
 
 #main.show {
@@ -60,7 +67,7 @@ div#main div.block.half {
 
 #inner {
     position: relative;
-    width: 82vw;
+    width: 97vw;
     margin-top: 50px;
     display:table-cell;
     margin-left: 250px;
@@ -89,13 +96,6 @@ div#main {
     bottom: 20px;
 }
 
-#name::before{
-    background-image: url('images/ing.png');
-    content: " ";
-    height: 30px;
-    width: 30px;
-}
-
 #logo {
     display: inline-block;
 }
@@ -107,4 +107,17 @@ img.half {
 .bubble
 {
     max-width: 88vw;
+}
+
+#menu .item .fa {
+    display: none;
+}
+
+.savingsImage {
+
+}
+
+.block p {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }

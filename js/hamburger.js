@@ -8,7 +8,6 @@ hamb.onclick=function(e){
     active = !active;
     menu.setAttribute('class', active ? 'show' : '');
     window.scrollTo(0,0);
-
 };
 
 hamb.style.marginLeft = "0px";
@@ -23,4 +22,19 @@ for(var i in menuItems){
             window.location = this.getAttribute(('name'));
         }, false);
     }
+}
+
+var hash = window.location.hash;
+if(hash == null || hash == ""){
+    console.log('empty');
+} else {
+    hash = hash.replace(/^#/, '');
+    bubble = document.getElementById("bubble");
+    bubble.innerHTML = hash;
+    bubble.setAttribute('class', 'bubble show');
+    console.log('Er zou iets moeten gebeuren');
+
+    window.setTimeout(function(){
+        bubble.setAttribute('class', 'bubble');
+    }, 7000)
 }

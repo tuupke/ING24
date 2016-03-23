@@ -46,14 +46,21 @@ if (isset($_GET['message'])){
 </div>
 <div id="main">
     <div id="menu">
-        <div class="item selected">
+        <div class="item" name="index.html">
             Overview
+            <i class="fa fa-eur"></i>
+        </div>
+        <div class="item" name="inbox.html">
+            Inbox
+            <i class="fa fa-envelope"></i>
+        </div>
+        <div class="item" name="savings.html">
+            Saving goals
+            <i class="fa fa-check-circle-o"></i>
         </div>
         <div class="item">
-            Plan
-        </div>
-        <div class="item">
-            Transactions
+            Settings
+            <i class="fa fa-cogs"></i>
         </div>
     </div>
     <div id="inner">
