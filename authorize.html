@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>BancTM</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="css/app.main.css">
+    <link rel="stylesheet" media="screen and (max-width: 780px)" href="css/app.mobile.css">
+</head>
+<body>
+<div id="header">
+    <span id='hamburger'><i class="fa fa-bars"></i></span> <span id="logo"><img src="images/ing.png" height="27px" /></span><span id="name">ING</span><span id='subtitel'> Mobiel Bankieren</span>
+</div>
+<div id="main">
+    <div id="menu">
+        <div class="item" name="index.html">
+            Overview
+        </div>
+        <div class="item" name="inbox.html">
+            Inbox
+        </div>
+        <div class="item">
+            Saving goals
+        </div>
+        <div class="item">
+            Settings
+        </div>
+    </div>
+    <div id="inner">
+        <div class="block">
+            <h1>Authorize Payment</h1>
+            <p><form action="index.html">
+            From:<br>
+            <select>
+                <option value="betaal">Betaalrekening &euro;42.738,-</option>
+                <option value="student">Huisrekening &euro;3627,-</option>
+                <option value="spaar">Spaarrekening &euro;31,-</option>
+            </select><br>
+            Amount(&euro;):<br>
+            <input type="text" name="lastname" value="231,00"><br>
+            To:<br>
+            <input type="text" name="lastname" value="Stichting Woonbedrijf SWS.Hhvl"><br>
+            IBAN:<br>
+            <input type="text" name="lastname" value="NL90INGB0003408435"><br>
+            Comment:<br>
+            <input type="text" name="lastname" ><br>
+            <input type="submit" value="save, new payment">
+            <input type="submit" value="save, to sendlist">
+        </form></p>
+        </div>
+    </div>
+</div>
+<div id="puppet">
+<img src='images/puppet.png' />
+</div>
+<script src='js/hamburger.js'></script>
+</body>
+</html>
