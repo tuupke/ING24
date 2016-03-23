@@ -3,6 +3,7 @@
     <title>BancTM</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="stylesheet" type="text/css" href="css/app.main.css">
     <link rel="stylesheet" media="screen and (max-width: 780px)" href="css/app.mobile.css">
 </head>
@@ -12,7 +13,7 @@
 </div>
 <div id="main">
     <div id="menu">
-        <div class="item selected" name="index.html">
+        <div class="item" name="index.html">
             Overview
         </div>
         <div class="item" name="inbox.html">
@@ -26,26 +27,31 @@
         </div>
     </div>
     <div id="inner">
-        The payment of €20,- you made at the shopping mall, on 23-03-2016 at 12:49, was not classifiable. What category would best describe the payment:
-<form>
-<h1>Incidental</h1>
-<input type="radio" name="gender" value="male"> Incidental<br>
-<h1>Categorised</h1>
-<input type="radio" name="gender" value="male"> Groceries<br>
-<input type="radio" name="gender" value="male"> Studies<br>
-<input type="radio" name="gender" value="male"> Pets<br>
-<input type="radio" name="gender" value="male"> New: <input type="text" name="lastname" value=""><br>
-<h1>Saving goals</h1>
-<input type="radio" name="gender" value="male"> Holiday<br>
-<input type="radio" name="gender" value="male"> Tv<br>
-<input type="radio" name="gender" value="male"> Car<br>
-<input type="submit" value="Done">
-</form>
-
-    </div>
+        <div class="block">
+        <p>
+            The payment of &euro;20,- you made at the shopping mall, on 23-03-2016 at 12:49, was not classifiable. What category would best describe the payment:
+            <h1>Incidental</h1>
+        <form>
+            <input type="radio" name="gender" value="male"> Incidental<br>
+            <h1>Categorised</h1>
+            <input type="radio" name="gender" value="male"> Groceries<br>
+            <input type="radio" name="gender" value="male"> Studies<br>
+            <input type="radio" name="gender" value="male"> Pets<br>
+            <input type="radio" name="gender" value="male"> New: <input type="text" name="lastname" value=""><br>
+            <h1>Saving goals</h1>
+            <input type="radio" name="gender" value="male"> Holiday<br>
+            <input type="radio" name="gender" value="male"> Tv<br>
+            <input type="radio" name="gender" value="male"> Car<br>
+            <br />
+            <input type="submit" value="Done">
+        </form>
+        </p>
+            </div>
 </div>
 
-
-<script src='js/login.js'></script>
+    <div id="puppet">
+        <img src='images/puppet.png' />
+    </div>
+<script src='js/hamburger.js'></script>
 </body>
 </html>

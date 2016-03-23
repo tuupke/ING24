@@ -1,4 +1,4 @@
-#header {
+#header, #header {
     background-color: white;
     font-size: 2em;
     line-height: 1.3em;
@@ -12,6 +12,10 @@
     right: 0px;
     top: 0px;
     z-index: 100;
+}
+
+#header::before{
+
 }
 
 body {

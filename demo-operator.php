@@ -28,12 +28,17 @@ if ($googlePush === false) {
 $results = $googlePush
     ->setMessageText($text)
     ->addRecipient('e4XWbLjoOBQ:APA91bHX93-tiA1I3aEirTAIXs39ML6uR4asqWN8KS3N2f2l5j7biOno7Zt_NRD2uksfG8utTpKN_TvvqpSkjXRUS3Q-7tILg_SGmbfC_J9vx3ZX7MwzjFYLIpQQ79xIgfJIgHedkMYq')
+    ->addRecipient('f9FUAhoKNdQ:APA91bHDp1yN1mEotFMwZMmeWFZEDiRmT3UqLmBWyP0S00OnMXdIzEHv0h9DspkH72LLEOWQw0nmJz_DnI45PZG2zpGdNjw2d9AdC7oCpjzWsOrDU6Y8tQKp0fUozeQaRuqb91KNzPg6')
     ->send();
+
+    var_dump($results);
+    var_dump($googlePush->getFailedRecipients());
 }
 
 if (isset($_GET['message'])){
     sendMessage($_GET['message']);
 }
+
 
 ?>
 <div id="header">
