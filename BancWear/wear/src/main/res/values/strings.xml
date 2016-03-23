@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SmartBalance</string>
+    <string name="smart_balance">SmartBalance*</string>
+    <string name="smart_amount">€ 45</string>
+    <string name="team">Team Banc™</string>
+    <string name="hello_square">Hello Square World!</string>
+</resources>
