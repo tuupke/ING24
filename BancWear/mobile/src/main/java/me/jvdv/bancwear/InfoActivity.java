@@ -16,27 +16,17 @@
 
 package me.jvdv.bancwear;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Message;
-import android.preference.PreferenceManager;
 import android.support.v4.content.LocalBroadcastManager;
-import android.app.Activity;
 import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.os.ResultReceiver;
-import android.os.Handler;
-
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 
-public class MainActivity extends BaseActivity {
+public class InfoActivity extends BaseActivity {
 
     private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     private static final String TAG = "MainActivity";
@@ -44,24 +34,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // TODO iets doen met een url laden
-
-/*        String customHtml = "<html><body><h1 id=\"Id\">Hello, WebView</h1></body></html>";
-        mWebView.loadData(customHtml, "text/html", "UTF-8");*/
-
-
-        mWebView.loadUrl(baseUrl);
-
-    }
-
-    protected void blaat(final String x) {
-        mWebView.setWebViewClient(
-                new WebViewClient() {
-                    public void onPageFinished(WebView view, String url) {
-                        mWebView.loadUrl("javascript:(function(){" + "document.getElementById('Id').innerHTML='" + x + "';" + "})()");
-                    }
-                });
+        mWebView.loadUrl(baseUrl + "/unclassified.html");
     }
 
     @Override
