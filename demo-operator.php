@@ -53,12 +53,12 @@ if (isset($_GET['message'])){
     </div>
     <div id="inner">
         <div class="block">
-            <h1>Pay bliis</h1>
+            <h1>Pay bills</h1>
             <p><a href="?message=Have you paid your rent yet?">Remind rent.</a></p>
         </div>
         <div class="block">
             <h1>Pay</h1>
-            <p><a href="?message=A payment of €20,- has been classified as groceries">Classified</a></p>
+            <p><a href="?message=You spend €20,- on groceries">Classified</a></p>
             <p><a href="?message=A payment of €20,- could not be classified.">Unclassified</a></p>
         </div>
         </div>
