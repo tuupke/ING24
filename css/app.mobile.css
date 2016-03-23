@@ -24,18 +24,35 @@ body {
 
 #menu {
     position: absolute;
+    display:table-cell;
+    margin-top: 57px;
+    background-color: black;
+    height: 3000px;
+}
+
+#menu .item {
+    width: 220px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 45px;
 }
 
 #main.show {
     margin-left: 0px;
     margin-right: -500px;
+    overflow:hidden;
 }
 
+#header {
+    border-bottom: none;
+}
 
 #inner {
     position: relative;
     width: 82vw;
-    margin-top: 30px;
+    margin-top: 50px;
+    display:table-cell;
     margin-left: 250px;
 }
 
@@ -47,9 +64,6 @@ body {
     margin-right: 16px;
 }
 
-div#main div.block {
-}
-
 div#main {
     width: calc(100% + 250px);
     margin-left: -250px;
@@ -58,10 +72,6 @@ div#main {
     transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
-}
-
-div#main div.block h1 {
-
 }
 
 #puppet {
