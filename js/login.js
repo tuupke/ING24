@@ -6,7 +6,7 @@ login.onclick=function(e){
       document.getElementById("login"+x).style.display = 'none';
       x+=1;
       }else{
-        document.getElementById("login").style.display = 'none';
+      window.location="authorize.html";
       }
 };
 
